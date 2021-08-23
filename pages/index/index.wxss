@@ -39,27 +39,14 @@
 }
 
 /**/
-.recommendContainer .header {
+.recommendContainer {
     padding: 20rpx;
-}
-
-.recommendContainer .header .title {
-    font-size: 32rpx;
-    line-height: 80rpx;
-    color: #666;
-}
-
-.recommendContainer .header .more {
-    float: right;
-    border: 1rpx solid #333;
-    padding: 10rpx 20rpx;
-    font-size: 24rpx;
-    border-radius: 30rpx;
 }
 
 /**/
 .recommendScroll {
     display: flex;
+    height: 300rpx;
 }
 
 .scrollItem {
@@ -85,4 +72,49 @@
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
+}
+
+.topList {
+    padding: 20rpx;
+}
+
+.topListSwiper {
+    height: 400rpx;
+}
+
+.swiperItem {
+    width: 96%;
+    background: #fbfbfb;
+}
+
+.swiperItem .title {
+    font-size: 30rpx;
+    line-height: 80rpx;
+}
+
+.musicItem {
+    display: flex;
+    margin-bottom: 20rpx;
+}
+
+.musicItem image {
+    width: 100rpx;
+    height: 100rpx;
+    border-radius: 60rpx;
+}
+
+.musicItem .count {
+    width: 100rpx;
+    height: 100rpx;
+    text-align: center;
+    line-height: 100rpx;
+}
+
+.musicItem .musicName {
+    height: 100rpx;
+    line-height: 100rpx;
+    max-width: 400rpx;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
