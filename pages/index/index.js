@@ -7,6 +7,7 @@ Page({
      */
     data: {
         bannerList: [],
+        recommendList: [],
     },
 
     /**
@@ -16,6 +17,11 @@ Page({
         let bannerListData = await request('/banner', {type: 2})
         this.setData({
             bannerList: bannerListData.banners
+        })
+
+        let recommendListData = await request('/personalized', {limit: 10})
+        this.setData({
+            recommendList: recommendListData.result
         })
 
     },
